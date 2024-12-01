@@ -1,0 +1,24 @@
+{
+  "name": "dalton-widget-modelos",
+  "version": "1.0.0",
+  "description": "Configuración de Webpack para compilar SCSS y JS.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Juan Jose Zermeño",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.x",
+    "@babel/preset-env": "^7.x",
+    "babel-loader": "^9.x",
+    "css-loader": "^6.x",
+    "css-minimizer-webpack-plugin": "^5.x",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3",
+    "terser-webpack-plugin": "^5.x",
+    "webpack": "^5.x",
+    "webpack-cli": "^5.x"
+  }
+}

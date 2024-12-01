@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.widgetModelos {
+  background-color: #FFF;
+  width: 100%;
+  .widgetModelos-pagination {
+    position: relative;
+   }
+  .widgetModelos--footerText {
+    margin-top: 30px;
+
+    p {
+      color: #858793;
+      text-align: center;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+
+  .widgetModelos-nextButton,
+  .widgetModelos-prevButton{
+    &::after{
+      font-size: 20px;
+      color: #464748;
+    }
+  }
+  
+  &-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.48px;
+    color: #232221;
+    margin-top: 27px;
+  }
+
+  .widgetModelos--cards {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 40px;
+
+  }
+
+  .widgetModelos-swiper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-bottom: 50px;
+
+  }
+
+  .widgetModelos--card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid #D7D8D9;
+    background: #FFF;
+    transition: box-shadow 0.25s ease-in-out;
+    box-sizing: border-box;
+
+    &:hover {
+
+      box-shadow: 0px 9px 26px 0px rgba(23, 15, 73, 0.05), 0px 8px 10px 0px rgba(109, 145, 229, 0.01) !important;
+    }
+
+    .widgetModelos--modelTitle {
+      color: #464748;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: 0.39px;
+      text-transform: uppercase;
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+
+    .widgetModelos--imagen {
+      height: 125px;
+      width: 293px;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: contain;
+    }
+
+    .widgetModelos--precio {
+      margin-top: 40px;
+      color: #494949;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    .widgetModelos--cta {
+      background-color: #0063CC;
+      color: #FFF;
+      border-radius: 25px;
+      height: 48px;
+      padding: 12px 45px;
+      min-width: 192px;
+      transition: transform 0.25s ease-in-out;
+      text-align: center;
+      &:hover {
+        transform: scale(1.04);
+      }
+    }
+
+    .widgetModelos--cta2 {
+      font-family: "Roboto", sans-serif;
+      color: #0063cc;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 106%;
+      text-decoration-line: underline;
+      text-decoration-skip-ink: none;
+      text-decoration-style: solid;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      gap: 5px;
+
+      .textLink {
+        margin-bottom: 3px;
+      }
+    }
+
+    .widgetModelos--desc {
+      margin-top: 30px;
+      color: #000;
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      margin-bottom: 20px;
+
+      ul>li {
+        margin-bottom: 5px;
+      }
+    }
+
+ 
+  }
+}
