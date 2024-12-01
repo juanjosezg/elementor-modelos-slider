@@ -118,8 +118,10 @@
       min-width: 192px;
       transition: transform 0.25s ease-in-out;
       text-align: center;
+      text-decoration: none;
       &:hover {
         transform: scale(1.04);
+        text-decoration: none;
       }
     }
 
