@@ -103,12 +103,7 @@
       </div>
     </div>
     <div class="widgetModelos--footerText">
-      <p>*Vigencia al 31 de Octubre 2023. Los precios,
-        especificaciones y promociones del auto pueden
-        cambiar sin previo aviso.Los modelos marcados con
-        Bono muestran el precio con el bono incluido. Para
-        más información consulte un asesor Dalton KIA.
-        Imágenes de carácter ilustrativo.</p>
+      <?php echo $settings['footer_text']; ?>
     </div>
   </div>
 </div>
