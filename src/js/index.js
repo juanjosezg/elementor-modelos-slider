@@ -3,7 +3,7 @@ const swiper = new Swiper('.widgetModelos-swiper', {
   direction: 'horizontal',
   slidesPerView: 1,
   centerInsufficientSlides:true,
-  spaceBetween: 20,
+  spaceBetween: 25,
   centeredSlides: true,
   centeredSlidesBounds: true,
   pagination: {

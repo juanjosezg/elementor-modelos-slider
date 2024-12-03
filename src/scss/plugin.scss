@@ -3,43 +3,65 @@
 .widgetModelos {
   background-color: #FFF;
   width: 100%;
+
   .widgetModelos-pagination {
     position: relative;
-   }
-  .widgetModelos--footerText {
-    margin-top: 30px;
+  }
 
-    p {
-      color: #858793;
-      text-align: center;
-      font-feature-settings: 'liga' off, 'clig' off;
-      font-family: "Roboto", sans-serif;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+
+  .widgetModelos-controls {
+
+    .widgetModelos-nextButton,
+    .widgetModelos-prevButton {
+      &::after {
+        font-size: 20px;
+        color: #464748;
+      }
+    }
+
+    @media(max-width:950px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+
+    @media(max-width:950px) {
+      .widgetModelos-nextButton {
+        width: 38px;
+        height: 38px;
+        border: 1px solid #4E5356;
+        border-radius: 3px;
+        left: 10px;
+        position: relative;
+        background-position: 50%;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        &::after {
+          display: none;
+        }
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMwMDAwMDAiIHRyYW5zZm9ybT0icm90YXRlKDE4MCkiPjxnIGlkPSJTVkdSZXBvX2JnQ2FycmllciIgc3Ryb2tlLXdpZHRoPSIwIj48L2c+PGcgaWQ9IlNWR1JlcG9fdHJhY2VyQ2FycmllciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L2c+PGcgaWQ9IlNWR1JlcG9faWNvbkNhcnJpZXIiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0yMjQgNDgwaDY0MGEzMiAzMiAwIDEgMSAwIDY0SDIyNGEzMiAzMiAwIDAgMSAwLTY0eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Im0yMzcuMjQ4IDUxMiAyNjUuNDA4IDI2NS4zNDRhMzIgMzIgMCAwIDEtNDUuMzEyIDQ1LjMxMmwtMjg4LTI4OGEzMiAzMiAwIDAgMSAwLTQ1LjMxMmwyODgtMjg4YTMyIDMyIDAgMSAxIDQ1LjMxMiA0NS4zMTJMMjM3LjI0OCA1MTJ6Ij48L3BhdGg+PC9nPjwvc3ZnPg==");
+      }
+
+      .widgetModelos-prevButton {
+        width: 38px;
+        left: 0;
+        height: 38px;
+        border: 1px solid #4E5356;
+        border-radius: 3px;
+        position: relative;
+        background-position: 50%;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMjI0IDQ4MGg2NDBhMzIgMzIgMCAxIDEgMCA2NEgyMjRhMzIgMzIgMCAwIDEgMC02NHoiLz48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJtMjM3LjI0OCA1MTIgMjY1LjQwOCAyNjUuMzQ0YTMyIDMyIDAgMCAxLTQ1LjMxMiA0NS4zMTJsLTI4OC0yODhhMzIgMzIgMCAwIDEgMC00NS4zMTJsMjg4LTI4OGEzMiAzMiAwIDEgMSA0NS4zMTIgNDUuMzEyTDIzNy4yNDggNTEyeiIvPjwvc3ZnPg==");
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 
 
-  .widgetModelos-nextButton,
-  .widgetModelos-prevButton{
-    &::after{
-      font-size: 20px;
-      color: #464748;
-    }
-  }
-  
-  &-title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0.48px;
-    color: #232221;
-    margin-top: 27px;
-  }
 
   .widgetModelos--cards {
     max-width: 1280px;
@@ -47,7 +69,6 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding-top: 40px;
-
   }
 
   .widgetModelos-swiper {
@@ -55,13 +76,18 @@
     box-sizing: border-box;
     padding: 0px;
     margin-bottom: 50px;
-
   }
 
   .widgetModelos--card {
+    &Top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     display: flex;
     flex-direction: column;
-
+    height: auto;
     padding: 20px;
     align-items: center;
     gap: 10px;
@@ -70,9 +96,9 @@
     background: #FFF;
     transition: box-shadow 0.25s ease-in-out;
     box-sizing: border-box;
+    justify-content: space-between;
 
     &:hover {
-
       box-shadow: 0px 9px 26px 0px rgba(23, 15, 73, 0.05), 0px 8px 10px 0px rgba(109, 145, 229, 0.01) !important;
     }
 
@@ -119,6 +145,8 @@
       transition: transform 0.25s ease-in-out;
       text-align: center;
       text-decoration: none;
+      margin-top: 15px;
+
       &:hover {
         transform: scale(1.04);
         text-decoration: none;
@@ -163,6 +191,6 @@
       }
     }
 
- 
+
   }
 }

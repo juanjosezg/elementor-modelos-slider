@@ -74,15 +74,6 @@ class Dalton_Widget_Modelos extends Widget_Base {
             ]
         );
 
-        $this->add_control(
-            'top_title',
-            [
-                'label' => __('Título', 'dalton-elementor-sliderModelos'),
-                'type' => Controls_Manager::TEXT,
-                'default' => __('Todos los Modelos', 'dalton-elementor-sliderModelos'),
-                'placeholder' => __('Todos los Modelos', 'dalton-elementor-sliderModelos'),
-            ]
-        );
 
         // Slides Repeater
         $repeater = new \Elementor\Repeater();
@@ -111,7 +102,7 @@ class Dalton_Widget_Modelos extends Widget_Base {
             'modelo_precio',
             [
                 'label' => __('Precio', 'dalton-elementor-sliderModelos'),
-                'type' => \Elementor\Controls_Manager::TEXT,
+                'type' => \Elementor\Controls_Manager::WYSIWYG,
                 'default' => __('Precio', 'dalton-elementor-sliderModelos'),
             ]
         );
@@ -259,16 +250,6 @@ class Dalton_Widget_Modelos extends Widget_Base {
                 'fields' => $repeater->get_controls(),
                 'default' => [],
                 'title_field' => '{{{ modelo_titulo }}}',
-            ]
-        );
-
-        $this->add_control(
-            'footer_text',
-            [
-                'label' => __('Footer Text', 'dalton-elementor-sliderModelos'),
-                'type' => \Elementor\Controls_Manager::WYSIWYG,
-                'default' => __('* Vigencia al XX de XX. Los precios, especificaciones y promociones del auto pueden cambiar sin previo aviso.Los modelos marcados con Bono muestran el precio con el bono incluido. Para más información consulte un asesor Dalton. Imágenes de carácter ilustrativo.', 'dalton-elementor-sliderModelos'),
-                'placeholder' => __('Footer Text', 'dalton-elementor-sliderModelos'),
             ]
         );
 
