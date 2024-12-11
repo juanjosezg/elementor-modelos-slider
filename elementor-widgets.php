@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Dalton - Elementor Widget - Slider Modelos 
  * Description: Un plugin de ejemplo para añadir widgets personalizados a Elementor.
- * Version: 1.2
+ * Version: 1.3
  * Author: Juan José Zermeño
  * Text Domain: dalton-elementor-sliderModelos
  */
