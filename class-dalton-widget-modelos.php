@@ -45,6 +45,7 @@ class Dalton_Widget_Modelos extends Widget_Base
     public function __construct($data = [], $args = null)
     {
         parent::__construct($data, $args);
+        $plugin_version = '1.4.0'; 
 
         if (!wp_script_is("swiper", "registered")) {
             wp_register_script(
@@ -67,13 +68,15 @@ class Dalton_Widget_Modelos extends Widget_Base
 
         wp_register_style(
             "widget-modelos",
-            plugins_url("dist/css/styles.min.css", __FILE__)
+            plugins_url("dist/css/styles.min.css", __FILE__),
+            [],
+            $plugin_version 
         );
         wp_register_script(
             "widget-modelos",
             plugins_url("dist/js/main.min.js", __FILE__),
             ["swiper"],
-            false,
+            $plugin_version, 
             true
         );
     }
